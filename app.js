@@ -18,6 +18,8 @@ else {
 	tg.MainButton.setText("Вывести информацию по овену");
 	item = "1";
 	tg.MainButton.show();
+	tg.sendData(item);
+
 	}
 });
 btn2.addEventListener("click", function () {
@@ -28,6 +30,7 @@ else {
 	tg.MainButton.setText("Вывести информацию по тельцу");
 	item = "2";
 	tg.MainButton.show();
+	tg.sendData(item);
 }
 });
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
